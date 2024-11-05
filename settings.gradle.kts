@@ -1,5 +1,13 @@
 rootProject.name = "kotless"
 
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        jcenter()
+        maven(url = "https://releases.jfrog.io/artifactory/oss-releases/")
+    }
+}
+
 include(":schema")
 include(":model")
 include(":engine")
