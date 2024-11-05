@@ -13,7 +13,7 @@ dependencies {
     implementation("com.amazonaws", "aws-java-sdk-dynamodb", "1.11.650")
 
     implementation("io.kotless", "ktor-lang", "0.1.6")
-    implementation("io.ktor", "ktor-html-builder", "1.3.2")
+    implementation("io.ktor", "ktor-html-builder", "1.4.0")
 }
 
 kotless {

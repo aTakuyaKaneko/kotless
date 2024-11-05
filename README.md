@@ -69,7 +69,7 @@ repositories {
 dependencies {
     implementation("io.kotless", "kotless-lang", "0.1.6")
 
-    //or for Ktor (Note, that `ktor-lang` depends on Ktor version 1.3.2)
+    //or for Ktor (Note, that `ktor-lang` depends on Ktor version 1.4.0)
     //implementation("io.kotless", "ktor-lang", "0.1.6")
 
     //or for Spring Boot (Note, that `spring-boot-lang` depends on Spring Boot version 2.3.0.RELEASE)
@@ -198,10 +198,10 @@ Kotless is able to deploy existing Spring Boot or Ktor application to AWS server
 it, you'll need to set up plugin and replace existing dependency with appropriate Kotless DSL.
 
 For **Ktor**, you should replace existing engine (
-e.g. `implementation("io.ktor", "ktor-server-netty", "1.3.2")`)
+e.g. `implementation("io.ktor", "ktor-server-netty", "1.4.0")`)
 with `implementation("io.kotless", "ktor-lang", "0.1.6")`. Note, that this dependency bundles Ktor
 of version
-`1.3.2`, so you may need to upgrade other Ktor libraries (like `ktor-html-builder`) to this version.
+`1.4.0`, so you may need to upgrade other Ktor libraries (like `ktor-html-builder`) to this version.
 
 For **Spring Boot** you should replace starter you use (
 e.g. `implementation("org.springframework.boot", "spring-boot-starter-web", "2.3.0.RELASE)`)
